@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+        <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">
+
+        <!--Font-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" type="text/css">
+
+        <!--Icons-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+        <!--Bootstrap-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+        <!--Angular-->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+
+        <link rel="stylesheet" href="2016.css">
+    </head>
+
+    <body ng-app="lanApp" ng-controller="MainController">
+
+        <div class="nav fixed hidden-xs">
+            <div class="container">
+                <ul class="pull-left">
+                    <li><a href="#schedule">Horaire</a></li>
+                    <li><a href="#tournament">Tournois</a></li>
+                    <li><a href="#players">Joueurs</a></li>
+                    <li><a href="#games">Jeux</a></li>
+                    <li><a href="#food">Bouffe</a></li>
+                    <li><a href="#achievements">Achievements</a></li>                    
+                    <li><a href="#">LAN précédents</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#myModal">À propos</a></li>
+                </ul>
+                <ul class="pull-right">
+                    <li><a href="https://drive.google.com/open?id=1XGZsD7zkcP_eT2fcVa4_Ld71OwTqhU1X8rsjwnc65f0" target="_blank"><img src="Images/GoogleDrive.png" alt="GoogleDrive"></img> Drive</a></li>
+                    <li><a href="https://lan2016.slack.com" target="_blank"><img src="Images/slack.png" alt="Slack"></img> Slack</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="jumbotron">
+            <div class="container">
+                <h1>LAN des FEUFS 2016</h1>
+                <h2>26 au 28 février</h2>
+                <p>It's happening. Avec ou sans JD.</p>
+                <span>... et pis apportez vos pantoufles.</span>
+
+                <a target="_blank" href="https://www.google.ca/maps/dir//765+Avenue+des+%C5%92illets,+Saint-Bruno,+QC+G0W+2L0/@48.4736917,-71.6484064,17z/data=!4m13!1m4!3m3!1s0x4cc1d9e8c6a808e9:0xe9e5f5b64169d3c3!2s765+Avenue+des+%C5%92illets,+Saint-Bruno,+QC+G0W+2L0!3b1!4m7!1m0!1m5!1m1!1s0x4cc1d9e8c6a808e9:0xe9e5f5b64169d3c3!2m2!1d-71.6462177!2d48.4736917">
+                    <img class="getdirection" src="Images/GetDirectionShadow.png" alt="Get directions"></img>
+                </a>
+            </div>
+        </div>
+
+        <div class="location">
+            <div class="container">
+                <h3>765 Avenue des Œillets</h3>
+                <p>Saint-Bruno, QC G0W 2L0</p>
+            </div>
+        </div>
+
+
+        <div id="schedule" class="schedule">
+            <div class="container">
+                <div class="col-md-3">
+                    <div class="row alternate-col">
+                        <h2>Jeudi</h2>
+                    </div>
+                    <div class="row">
+                        <h3>Matin</h3>
+                        -
+                        <h3>Après-midi</h3>
+                        <span style="color: gray;font-size: smaller">Arrivée des joueurs</span>
+                        <h3>Soir</h3>
+                        <div><i class="fa fa-star" style="color: #4285F4"></i><p class="featured-game">Counter-Strike</p></div>
+                        <div><i class="fa fa-star" style="color: #4285F4"></i><p class="featured-game">Starcraft 2 - Desert Strike</p></div>
+                    </div>
+
+                </div>
+
+                <div class="col-md-3 ">
+                    <div class="row alternate-col">
+                        <h2>Vendredi</h2>
+                    </div>
+                    <div class="row">
+                        <h3>Matin</h3>
+                        <div><i class="fa fa-star" style="color: #4285F4"></i><p class="featured-game">Chivalry</p></div>
+                        <div><i class="fa fa-star" style="color: #4285F4"></i><p class="featured-game">Dying Light</p></div>
+                        <div><span style="color: gray;font-size: smaller">Arrivée de Will</span></div>
+                        <h3>Après-midi</h3>
+                        <div><i class="fa fa-star" style="color: #4285F4"></i><p class="featured-game">Left 4 Dead 2</p></div>
+                        <div><i class="fa fa-star" style="color: #4285F4"></i><p class="featured-game">Borderlands 2</p></div>
+                        <p class="tournament">14h: Tournoi Nosgoth</p>
+                        <h3>Soir</h3>
+                        <p class="tournament">18h: Tournoi Hawken</p><br>
+                        <p class="tournament">21h: Tournoi Rocket League</p>
+                        <div><span style="color: gray;font-size: smaller">JD quitte le LAN</span></div>
+                        <div><span style="color: gray;font-size: smaller">Arrivée de Frank</span></div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="row alternate-col">
+                        <h2>Samedi</h2>
+                    </div>
+                    <div class="row">
+                        <h3>Matin</h3>
+                        <div><i class="fa fa-star" style="color: #4285F4"></i><p class="featured-game">Heroes Of The Storm</p></div>
+                        <div><i class="fa fa-star" style="color: #4285F4"></i><p class="featured-game">Blaze Rush</p></div>
+                        <h3>Après-midi</h3>
+                        <div><i class="fa fa-star" style="color: #4285F4"></i><p class="featured-game">Awesomenauts</p></div>
+                        <div><i class="fa fa-star" style="color: #4285F4"></i><p class="featured-game">Diablo 3</p></div>
+                        <h3>Soir</h3>
+                        <div><i class="fa fa-star" style="color: #4285F4"></i><p class="featured-game">Starcraft 2 - TD</p></div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="row alternate-col">
+                        <h2>Dimanche</h2>
+                    </div>
+                    <div class="row">
+                        <h3>Matin</h3>
+                        Pactage et Au revoir
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="tournament" class="tournament">
+            <div class="container">
+                <h1>Les tournois</h1>
+                <p style="color: #0094ff">Prix: Carte cadeau Steam à la 1ère, 2e et 3e place du tournoi. 10$ fourni par les participants du LAN.</p>
+
+                                    <!--<div class="row">
+                                                                                                                                                                                                        <div class="col-md-3">
+                                                                                                                                                                                                            <img src="Images/rocket-league.png" alt="rocket-league" class="pull-left" style="margin-right: 10px"></img>
+                                                                                                                                                                                                            <h4>Rocket League</h4>
+                                                                                                                                                                                                            <p>organisé par <b>Giroux</b></p>
+                                                                                                                                                                                                        </div>
+                                                                                                                                                                                                        <div class="col-md-3">
+                                                                                                                                                                                                            <img src="Images/nosgoth.jpg" alt="nosgoth" class="pull-left" style="margin-right: 10px"></img>
+                                                                                                                                                                                                            <h4>Nosgoth</h4>
+                                                                                                                                                                                                            <p>organisé par <b>Will</b></p>
+                                                                                                                                                                                                        </div>
+                                                                                                                                                                                                        <div class="col-md-3">
+                                                                                                                                                                                                            <img src="Images/hawken-the-game.png" alt="hawken" class="pull-left" style="margin-right: 10px"></img>
+                                                                                                                                                                                                            <h4>Hawken</h4>
+                                                                                                                                                                                                            <p>organisé par <b>Gab et Dan</b></p>
+                                                                                                                                                                                                        </div>
+                                                                                                                                                                                                        <div class="col-md-3">
+                                                                                                                                                                                                            <img src="Images/bf4.png" alt="bf4" class="pull-left" style="margin-right: 10px"></img>
+                                                                                                                                                                                                            <h4>Battlefield 4?</h4>
+                                                                                                                                                                                                            <p>organisé par <b>Vince?</b></p>
+                                                                                                                                                                                                        </div>
+                                                                                                                                                                                                    </div>-->
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <img src="Images/rocket-league.png" alt="rocket-league" class="pull-left" style="margin-right: 10px"></img>
+                        <h4>Rocket League</h4>
+                        <p>organisé par <b>Giroux</b></p>
+                    </li>
+                    <li class="list-group-item">
+                        <img src="Images/nosgoth.jpg" alt="nosgoth" class="pull-left" style="margin-right: 10px"></img>
+                        <h4>Nosgoth</h4>
+                        <p>organisé par <b>Will</b></p>
+                    </li>
+                    <li class="list-group-item">
+                        <img src="Images/hawken-the-game.png" alt="hawken" class="pull-left" style="margin-right: 10px"></img>
+                        <h4>Hawken</h4>
+                        <p>organisé par <b>Gab et Dan</b></p>
+                    </li>
+                    <li class="list-group-item">
+                        <img src="Images/bf4.png" alt="bf4" class="pull-left" style="margin-right: 10px"></img>
+                        <h4>Battlefield 4?</h4>
+                        <p>organisé par <b>Vince?</b></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="players" class="players">
+            <div class="container">
+                <div>
+                    <h1>Les joueurs</h1>
+
+                    <div class="col-md-4 col-sm-6 col-xs-12" ng-repeat="player in players">
+                        <player-card player="player"></employee-card>
+                    </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="games" class="games">
+            <div class="container">
+                <h1>Les jeux</h1>
+
+                <div class="row">
+
+                    <div class="col-md-4">
+
+                        <h4 style="color: orange">Tournoi</h4>
+
+                        <ul class="list-group">
+                            <li class="list-group-item">Battlefield 4</li>
+                            <li class="list-group-item">Hawken</li>
+                            <li class="list-group-item">Nosgoth</li>
+                            <li class="list-group-item">Rocket League</li>
+                        </ul>
+                    </div>
+
+
+                    <div class="col-md-4">
+
+                        <h4 style="color: blueviolet">Featured</h4>
+
+                        <ul class="list-group">
+                            <li class="list-group-item">Counter Strike (Gun Game | Demolition)</li>
+                            <li class="list-group-item">Starcraft 2 - Desert Strike</li>
+                            <li class="list-group-item">Starcraft 2 - TD</li>
+                            <li class="list-group-item">Chivalry</li>
+                            <li class="list-group-item">Dying Light</li>
+                            <li class="list-group-item">Left 4 Dead 2</li>
+                            <li class="list-group-item">Borderlands 2</li>
+                            <li class="list-group-item">Heroes Of The Storm</li>
+                            <li class="list-group-item">Blaze Rush</li>
+                            <li class="list-group-item">Awesomenauts</li>
+                            <li class="list-group-item">Diablo 3</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-4">
+
+                        <h4>Optional</h4>
+
+                        <ul class="list-group">
+                            <li class="list-group-item">Monday Night Combat</li>
+                            <li class="list-group-item">Super monday night Combat</li>
+                            <li class="list-group-item">Call of Duty Modern Warfare 3</li>
+                            <li class="list-group-item">Jedi knight 2</li>
+                            <li class="list-group-item">Jedi Academy</li>
+                            <li class="list-group-item">MechWarrior Online <span class="pull-right" style="color: gray;font-size: smaller">gratuit</span></li>
+                            <li class="list-group-item">Portal 2 (en coop)</li>
+                            <li class="list-group-item">Serious Sam HD</li>
+                            <li class="list-group-item">LOL <span class="pull-right" style="color: gray;font-size: smaller">gratuit</span></li>
+                            <li class="list-group-item">Unreal</li>
+                            <li class="list-group-item">Serious Sam 3</li>
+                            <li class="list-group-item">Dirt 3</li>
+                            <li class="list-group-item">DOTA 2 <span class="pull-right" style="color: gray;font-size: smaller">gratuit</span></li>
+                            <li class="list-group-item">Hawken <span class="pull-right" style="color: gray;font-size: smaller">gratuit</span></li>
+                            <li class="list-group-item">Team Fortress 2 <span class="pull-right" style="color: gray;font-size: smaller">gratuit</span></li>
+                            <li class="list-group-item">Smite <span class="pull-right" style="color: gray;font-size: smaller">gratuit</span></li>
+                            <li class="list-group-item">Titanfall</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="food" class="food">
+            <div class="container">
+                <h1>La bouffe</h1>
+                <h4 style="color:#DC143C">Point important</h4>
+                <ul>
+                    <li>Bouffe commune: <b>Samedi soir</b></li>
+                    <li>Sam aura un <b>BBQ disponible</b> dans la mesure où il n'est pas enseveli sous 30 pieds de neige.</li>
+                    <li>Sam <b>n'a pas de café/cafétière/filtre à café.</b> Quelqu'un doit en apporter une.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="achievements" class="achievements">
+            <div class="container">
+                <h1>Les achievements</h1>
+                <ul class="list-group">
+                    <li class="list-group-item" ng-repeat="achievement in achievements">
+                        <achievement-View achievement="achievement"></achievement-View>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">À propos</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Un ti-site bin timide fait par DheiF.</p>
+                        </p>
+                        <p>Vive les feufs!</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!--jquery & Bootstrap-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+        <!-- Modules -->
+        <script src="js/app.js"></script>
+
+        <!-- Controllers -->
+        <script src="js/controllers/MainController.js"></script>
+
+        <!-- Directives -->
+        <script src="js/directives/playerCard.js"></script>
+        <script src="js/directives/achievementDirective.js"></script>
+    </body>
+</html>

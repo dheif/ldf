@@ -1,0 +1,250 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    padding-top: 40px;    
+}
+
+.nav{
+   padding: 10px 0px 5px 0px; 
+   background: rgba(255,255,255,1);
+}
+.nav a {
+  color: #5a5a5a;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 14px 10px;
+  text-transform: uppercase;
+}
+
+.nav.fixed {
+    position: fixed;
+    z-index: 1050;
+    top: 0;
+    width: 100%;
+    left: 0;
+}
+
+.nav li {
+  display: inline;
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -250px;
+    visibility: hidden;
+}
+
+.jumbotron {
+    background: 
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url(Images/chezwill.jpg);
+  
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 0px;
+}
+
+.jumbotron{
+    color: #fff;
+  text-shadow: 1px 1px Black;  
+}
+
+.jumbotron .container {
+  position: relative;
+  top:40px;
+}
+
+
+.jumbotron p {
+  position: absolute;
+  top: 300px;
+  font-size: 24px;
+}
+
+.jumbotron span {
+  position: absolute;
+  top: 340px;
+}
+
+.jumbotron h1 {
+  color: #fff;
+  font-size: 48px;  
+  font-weight: bold;
+  position: absolute;
+  padding: 4px 8px;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.jumbotron h2 {  
+  font-size: 36px;
+  position: absolute;
+  padding: 4px 8px;
+  bottom: 10px;
+  background: rgba(0, 0, 0, 0.75);  
+}
+
+.jumbotron .getdirection {
+  position: relative;
+  top: 210px;
+  float: right;
+}
+
+.location{
+    background-color: #4285F4;    
+    padding: 10px 10px 10px 10px;
+    color: White;
+    text-shadow: 1px 1px Black;  
+}
+
+.where {
+  background-color: #efefef;
+  border-bottom:1px solid #dbdbdb;
+}
+
+
+/*Schedule*/
+
+.schedule {
+  background-color: #f7f7f7; 
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.schedule h2{
+    margin: 10px 0px;
+}
+
+.schedule h3{
+    margin: 30px 0px 10px 0px;
+    color: #AAAAAA;
+}
+
+.schedule .alternate-col {
+    background-color: #dbdbdb;
+    text-align: center;
+}
+
+.schedule .tournament{
+    color: #4285F4;
+    font-weight: 400;
+    display: inline;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.schedule .featured-game{
+    margin-left: 4px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    display: inline;
+}
+
+
+/*Players*/
+
+.players {
+  background-color: #f7f7f7;   
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.games{     
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+/*Food*/
+
+.food{     
+  padding-top: 20px;
+  padding-bottom: 10px;  
+}
+
+.card-data{
+    text-align: left;
+    margin: auto;
+}
+
+
+/*Achievements*/
+
+.achievements{
+    background-color: #f7f7f7;
+}
+
+
+.achievement-name{
+    font-size: 18px;
+    margin: 0px;
+    
+}
+
+.achievement-description{
+    color: gray;
+    margin: 0px;
+}
+
+
+/*forms*/
+.circle{    
+	width: 150px;
+	height: 150px;
+	background: #AAAAAA;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+h1{
+    margin-bottom: 20px;
+}
+
+
+.image-cropper {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+.image-cropper img {
+  display: inline;
+  margin: 0 auto;
+  height: 100%;
+  width: auto;
+}
+
+
+.employee-name {
+  font-size: 16px;
+  margin: 0px;
+}
+
+.employee-description {
+  color: rgba(0,0,0, 0.4);
+  font-size: 12px;
+  word-break: break-all;
+  white-space: normal;
+}
+
+.employee-actions {
+  color: rgba(0,0,0, 0.5);
+  margin-left: 5px;
+  margin-right: 5px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.employee-actions:hover {
+  color: #ffffff;
+}

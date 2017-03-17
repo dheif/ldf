@@ -1,0 +1,39 @@
+<div style="height: 90px">
+
+    <!--Picture-->
+    <div class="image-cropper pull-left">
+        <img ng-src="{{ player.picture }}" alt="{{ player.username }}" ng-click="isDescriptionVisible = !isDescriptionVisible" />
+    </div>
+
+    <div style="float: left; margin-left: 6px">
+
+        <!--Name-->
+        <p class="employee-name" title="{{ player.email }}"> {{ player.name }} </p>
+
+        <!--Steam-->
+        <a href="http://steamcommunity.com/profiles/{{ player.steamId }}/" target="_blank">
+            <i class="fa fa-steam-square" style="color: Black;margin-left: 2px"></i>
+            {{ player.username }}
+        </a>
+
+        <br>
+
+        <!--Song-->
+        <a href="{{ player.songUrl }}" ng-show="player.songUrl != null" target="_blank">
+            <img src="Images/googleplay.png" alt="googleplay"></img>
+            {{ player.song }}
+        </a>
+
+        <!--Description-->
+        <p class="employee-description">  </p>
+    </div>
+
+    <!--Email-->
+    <!--<a class="employee-actions" href="mailto:{{ player.email }}">
+        <i class="fa fa-envelope-o"></i>
+    </a>-->
+</div>
+
+
+<!--<a href="http://steamsignature.com"><img src="http://steamsignature.com/status/english/{{ player.steamId }}.png" alt="{{ player.steamId }}" title="" /></a><a href='steam://friends/add/76561197970524283'><img src='http://steamsignature.com/AddFriend.png'></a>-->
+<!--<img src="http://steamsignature.com/profile/english/{{ player.steamId }}.png" alt="{{ player.steamId }}" style="margin: 10px">-->

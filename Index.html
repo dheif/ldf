@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta http-equiv="cache-control" content="no-cache" />
+
+        <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">
+
+        <!--Font-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" type="text/css">
+
+        <!--Icons-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+        <!--Bootstrap-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+        <!--Angular-->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+
+        <link rel="stylesheet" href="main.css">
+    </head>
+
+    <body ng-app="lanApp" ng-controller="MainController">
+
+        <div class="nav fixed hidden-xs">
+            <div class="container">
+                <ul class="pull-left">
+                    <li><a href="#schedule">Horaire</a></li>
+                    <li><a href="#players">Joueurs</a></li>
+                    <li><a href="#games">Jeux</a></li>
+                    <li><a href="#achievements">Achievements</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Photos<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="https://goo.gl/photos/wCt54nqUS5onfaHKA" target="_blank">2016 (Sam)</a></li>
+                            <li><a href="https://goo.gl/photos/Q5n9oybnymVkWJUTA" target="_blank">2015 (Dany)</a></li>
+                            <li><a href="https://goo.gl/photos/pZT13XiqGDnKXJgY7" target="_blank">2014 (Gab)</a></li>
+                            <li><a href="#">2013 (Gab)</a></li>
+                            <li><a href="https://goo.gl/photos/FAge5WUw74kAry2Q8" target="_blank">2012 (Gab)</a></li>
+                            <li><a href="https://goo.gl/photos/ume6Zi5Bxpem6Pij8" target="_blank">2011 (Gab)</a></li>
+                            <li><a href="#">2010 (Giroux)</a></li>
+                            <li><a href="https://goo.gl/photos/kANh4WjJJU2c9HG1A" target="_blank">2009 (Pierre-Luc)</a></li>
+                            <li><a href="#">2008</a></li>
+                            <li><a href="#">2007</a></li>
+                            <li><a href="#">2006 (Sherbrooke)</a></li>
+                            <li><a href="#">2005 (Sherbrooke)</a></li>
+                            <li><a href="#">2004 (Sherbrooke)</a></li>
+                        </ul>
+                    </li>
+                    <!--<li><a href="#" data-toggle="modal" data-target="#myModal">À propos</a></li>-->
+                </ul>
+                <ul class="pull-right">
+                    <li><a href="https://play.google.com/music/playlist/AMaBXylCs8k8L_RCvkLq8xS0Fs8sx6XW7z3Itj96lTCloOag-s-PvgrKGfqi7ih5sceLqB3IXTdaSy1XfqMwt5o7Wguh1tcwjQ==" target="_blank"><img src="Images/googleplay.png" alt="Google Play playlist"></img> Playlist</a></li>
+                    <li><a href="https://docs.google.com/spreadsheets/d/14S2opmADygPB8mHfOtP79osxtb1Rmxrms589hGqNMjQ/edit?usp=sharing" target="_blank"><img src="Images/GoogleDrive.png" alt="GoogleDrive"></img> Drive</a></li>
+                    <li><a href="https://lan2016.slack.com" target="_blank"><img src="Images/slack.png" alt="Slack"></img> Slack</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="jumbotron">
+            <div class="container">
+                <h1>LAN des FEUFS 2017</h1>
+                <h2>24 au 26 février</h2>
+                <p>Avec un SPA en prime!</p>
+                <span>...mais gardez vos bobettes.</span>
+
+                <a target="_blank" href="https://goo.gl/maps/VC1wujEH6vy">
+                    <img class="getdirection" src="Images/GetDirectionShadow.png" alt="Get directions"></img>
+                </a>
+            </div>
+        </div>
+
+        <div class="location">
+            <div class="container">
+                <h3>1120 avenue des hydrangées</h3>
+                <p>Alma, Quebec G8B 3A7</p>
+            </div>
+        </div>
+
+        <div id="schedule" class="schedule">
+            <div class="container">
+                <div class="col-md-3">
+                    <div class="row alternate-col">
+                        <h2>Jeudi</h2>
+                    </div>
+                    <div class="row">
+                        <h3>Matin</h3>
+                        <div><p class="featured-game">HOTS</p></div>
+                        <h3>Après-midi</h3>
+                        <div><p class="featured-game">HOTS</p></div>
+                        <h3>Soir</h3>
+                        <div><p class="featured-game">19h30: SW: Battlefront</p></div>
+                        <div><i class="fa fa-star" style="color: #4285F4"></i><p class="tournament">22h00: Chivalry</p></div>
+                        <div><p class="featured-game">Golf</p></div>
+                    </div>
+
+                </div>
+
+                <div class="col-md-3 ">
+                    <div class="row alternate-col">
+                        <h2>Vendredi</h2>
+                    </div>
+                    <div class="row">
+                        <h3>Matin</h3>
+                        <div><p class="featured-game">10h30: Titanfall 2</p></div>
+                        <h3>Après-midi</h3>
+                        <div><i class="fa fa-star" style="color: #4285F4"></i><p class="tournament">14h: Smite</p></div>                        
+                        <h3>Soir</h3>
+                        <div><p class="featured-game">Souper commun</p></div>
+                        <div><i class="fa fa-star" style="color: #4285F4"></i><p class="tournament">20h: CS:GO</p><br></div>
+                        <div><p class="featured-game">Golf</p></div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="row alternate-col">
+                        <h2>Samedi</h2>
+                    </div>
+                    <div class="row">
+                        <h3>Matin</h3>
+                        <div><p class="featured-game">10h30: HOTS</p></div>
+                        <h3>Après-midi</h3>
+                        <div><i class="fa fa-star" style="color: #4285F4"></i><p class="tournament">13h: Qualification Overwatch</p></div>
+                        <div><i class="fa fa-star" style="color: #4285F4"></i><p class="tournament">16h: Rocket League</p></div>
+                        <h3>Soir</h3>
+                        <div><i class="fa fa-star" style="color: #4285F4"></i><p class="tournament">20h: Overwatch</p></div>                        
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="row alternate-col">
+                        <h2>Dimanche</h2>
+                    </div>
+                    <div class="row">
+                        <h3>Matin</h3>
+                        Pactage et Au revoir
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="games" class="games">
+            <div class="container">
+                <h1>Les jeux</h1>
+
+                <div class="row">
+
+                    <div class="col-md-4">
+
+                        <h4 style="color: orange; text-align: center">Main tournament</h4>
+                        <h5 style="color: gray; text-align: center">(12 players required)</h5>
+
+
+                        <ul class="list-group">
+                            <li class="list-group-item">Counter-Strike: GO <span class="pull-right" style="color: gray;font-size: smaller">Newtone</span></li>
+                            <li class="list-group-item">Overwatch<span class="pull-right" style="color: gray;font-size: smaller">Flames</span></li>
+                            <li class="list-group-item">Rocket League<span class="pull-right" style="color: gray;font-size: smaller">DheiF</span></li>
+                            <li class="list-group-item">Chivalry<span class="pull-right" style="color: gray;font-size: smaller">DownyTif</span></li>
+                        </ul>
+                    </div>
+
+
+                    <div class="col-md-4">
+
+                        <h4 style="color: blueviolet; text-align: center">Featured game</h4>
+                        <h5 style="color: gray; text-align: center">(12 players or less required)</h5>
+
+                        <ul class="list-group">
+                            <li class="list-group-item">Smite<span class="pull-right" style="color: gray;font-size: smaller">Splr</span></li>
+                            <li class="list-group-item">Star Wars: Battlefront<span class="pull-right" style="color: gray;font-size: smaller">MadNomad</span></li>                            
+                            <li class="list-group-item">Heroes of the Storm<span class="pull-right" style="color: gray;font-size: smaller">The_gab</span></li>
+                            <li class="list-group-item">Golf with friends<span class="pull-right" style="color: gray;font-size: smaller">Newtone</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-4">
+
+                        <h4 style="text-align: center">Optional</h4>
+                        <h5 style="color: gray; text-align: center">(One or more players manifested interest)</h5>
+
+                        <ul class="list-group">
+                            <li class="list-group-item">Natural Selection 2<span class="pull-right" style="color: gray;font-size: smaller">Flames</span></li>
+                            <li class="list-group-item">Toxikk<span class="pull-right" style="color: gray;font-size: smaller">Chewi</span></li>              
+                            <li class="list-group-item">Paragon<span class="pull-right" style="color: gray;font-size: smaller">Chewi</span></li>                            
+                            <li class="list-group-item">Hawken<span class="pull-right" style="color: gray;font-size: smaller">DownyTif</span></li>
+                            <li class="list-group-item">DOOM<span class="pull-right" style="color: gray;font-size: smaller">DheiF</span></li>
+                            <li class="list-group-item">Heartstone<span class="pull-right" style="color: gray;font-size: smaller">Nest</span></li>                            
+                            <li class="list-group-item">Magicka Wizard Wars<span class="pull-right" style="color: gray;font-size: smaller">Flames</span></li>
+                            <li class="list-group-item">DOTA 2<span class="pull-right" style="color: gray;font-size: smaller">Swah</span></li>
+                            <li class="list-group-item">Diablo 3 (Reaper of Souls)<span class="pull-right" style="color: gray;font-size: smaller">Ppepsi</span></li>
+                            <li class="list-group-item">The Division<span class="pull-right" style="color: gray;font-size: smaller">madNomad</span></li>
+                            <li class="list-group-item">League of Legends</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="players" class="players">
+            <div class="container">
+                <div>
+                    <h1>Les joueurs</h1>
+
+                    <div class="col-md-4 col-sm-6 col-xs-12" ng-repeat="player in players">
+                        <player-card player="player"></employee-card>
+                    </div>
+                    </ul>
+                    <br>
+
+                    <a href="https://www.youtube.com/watch?v=SncwKUpWwG8" target="_blank">
+                        <img src="Images/youtube.png" alt="youtube"></img>
+                        LQJR Song
+                    </a>
+
+                    <br>
+
+                    <a href="https://www.youtube.com/watch?v=ovsVU6mktOw" target="_blank">
+                        <img src="Images/youtube.png" alt="youtube"></img>
+                        BOOM HEADSHOT
+                    </a>
+
+                    <br>
+
+                    <a href="https://play.google.com/music/m/Tniox455tkoge3kknsyv6lnlloi?t=In_The_End_-_Linkin_Park" target="_blank">
+                        <img src="Images/googleplay.png" alt="googleplay"></img>
+                        Linkin Park (In The End)
+                    </a>
+
+
+                </div>
+            </div>
+        </div>
+
+
+        <div id="food" class="food">
+            <div class="container">
+                <h1>La bouffe</h1>
+
+                <ul>
+                    <li>Souper commun: (bouffe) le (date)</li>
+                    <li>BBQ disponible sur place (Gaz et Charbon)</li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div id="achievements" class="achievements">
+            <div class="container">
+                <h1>Les achievements</h1>
+                <ul class="list-group">
+                    <li class="list-group-item" ng-repeat="achievement in achievements">
+                        <achievement-view achievement="achievement"></achievement-view>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">À propos</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Un ti-site bin timide fait par DheiF.</p>
+                        </p>
+                        <p>Vive les feufs!</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!--jquery & Bootstrap-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+        <!-- Modules -->
+        <script src="js/app.js"></script>
+
+        <!-- Controllers -->
+        <script src="js/controllers/MainController.js"></script>
+
+        <!-- Directives -->
+        <script src="js/directives/playerCard.js"></script>
+        <script src="js/directives/achievementDirective.js"></script>
+    </body>
+</html>
